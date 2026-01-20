@@ -1,10 +1,8 @@
----
-prefix: EX
----
-# Personal Ticket Manager for Obsidian
 
 
 ![image](_Static/banner.jpg)
+
+# Personal Ticket Manager for Obsidian 📖
 ## What's This About? 🤔
 
 This is a personal ticket manager for those who find organization in making Jira tickets for themselves, but don't want the hassle of setting up Jira Cloud or Confluence. 
