@@ -28,7 +28,7 @@ sections.push("***");
 // Always present button
 sections.push(`\`\`\`button
 name Create Side Quest
-type note(${folder_name}/${item_folder}/\<\% await app.insertIncrementalId(tp.frontmatter.prefix) \%\>, tab) template
+type note(${folder_name}/${item_folder}/\<\% await app.insertIncrementalId(tp.frontmatter.prefix) \%\>  \<\% tp.system.prompt("What's the title?", "") \%\> , tab) template
 action ticket_template
 templater true
 \`\`\``);

@@ -201,8 +201,15 @@
   },
   "active": "629aeaf7890324ac",
   "lastOpenFiles": [
-    "Example/quest log/EX-2.md",
+    "Test/quest log/EX-5  Bob.md",
+    "Test/Overview.md",
     "README.md",
+    "Test/quest log",
+    "Test",
+    "_Templates/new_project_template.md",
+    "_Static/banner.jpg",
+    "_Templates/ticket_template.md",
+    "Example/quest log/EX-2.md",
     "_Static/screen_shot_4.png",
     "Example/quest log/EX-1.md",
     "Example/Overview.md",
@@ -213,11 +220,8 @@
     "Example/quest log/EX-3.md",
     "Example/quest log",
     "Example",
-    "_Templates/new_project_template.md",
     "Example/Example Overview.md",
-    "_Static/banner.jpg",
     "_Static",
-    "_Templates/ticket_template.md",
     "Untitled Kanban.md",
     "P1.md",
     "test.md",
@@ -237,9 +241,6 @@
     "Hello World/quest log/EX-69.md",
     "Hello World/quest log",
     "Hello World",
-    "Hello/Overview.md",
-    "Hello/quest log",
-    "Hello",
-    "Year2026/quest log"
+    "Hello/quest log"
   ]
 }

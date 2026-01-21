@@ -6,7 +6,7 @@ keywords: <% tp.system.prompt("Keywords (comma-separated, optional)", "") %>
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
 
-#  <% tp.file.title.replace(/^Ticket - /, "") %>: <% tp.system.prompt("What's the title?", "") %>
+# <% tp.file.title %>
 
 ## Description
 <% tp.system.prompt("Quick description of the ticket:", "") %>
