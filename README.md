@@ -78,6 +78,99 @@ That's it! You're good to go 🎉
 - Click on **Create new project template** to scaffold out your new project
 
 This will set up your quest log and overview file, and you'll be ready to start tracking tickets!
+
+## Getting Template Updates 🔄
+
+### Enable the Git Plugin First
+
+Before you can pull updates, you need to install the Git plugin:
+
+1. Go to **Settings** → **Community plugins** → **Enable Git**
+### Pulling Updates
+
+**Step 1: Save Your Work**
+- Open Command Palette (`Ctrl/Cmd + P`)
+- Run **"Obsidian Git: Commit all changes"**
+- Add a message like "Local updates before pull"
+
+**Step 2: Pull the Updates**
+- Open Command Palette again
+- Run **"Obsidian Git: Pull"**
+- The plugin will fetch and merge changes from the template repo
+
+**Step 3: Handle Conflicts (if they happen)**
+- If conflicts occur, the plugin will notify you
+- Open the conflicted files (they'll be marked in Obsidian)
+- Look for the `<<<<<<<` sections and resolve them manually
+- Commit the resolutions via the plugin
+- Run "Obsidian Git: Pull" again if needed
+
+### Auto-Update (Optional) ⚙️
+
+Want hands-off updates? Enable auto-pull in the plugin settings (Settings → Obsidian Git):
+- Set it to pull on startup or at intervals
+- **Warning**: This could interrupt your work if conflicts pop up, so use with caution
+## Setting Up Your Personal Repo 🔗
+
+Want to keep your own version synced to GitHub while still pulling template updates? Here's how:
+### Step 1: Fork and Clone
+
+1. **Fork the template repo** on GitHub to your account (or create a new empty repo)
+2. In Obsidian, open Command Palette (`Ctrl/Cmd + P`)
+3. Run **"Obsidian Git: Clone an existing remote repo"**
+4. Enter your repo URL with a personal access token (PAT):
+   ```
+   https://<YOUR_PAT>@github.com/yourusername/your-repo.git
+   ```
+5. Reload Obsidian if needed
+
+### Step 2: Add Template as Upstream
+
+**Via Plugin (Easiest):**
+- Settings → Obsidian Git → **"Edit remotes"** (or Command Palette → "Obsidian Git: Edit remotes")
+- Add remote: Name it `upstream`, URL: `https://github.com/vincent-buchner/obsidian-personal-ticket-manager.git`
+
+**Via Terminal (Alternative):**
+```bash
+git remote add upstream https://github.com/vincent-buchner/obsidian-personal-ticket-manager.git
+```
+
+### Step 3: Sync Your Changes to Your Repo
+
+**Manual:**
+1. Command Palette → **"Obsidian Git: Commit all changes"** (add message like "My updates")
+2. Command Palette → **"Obsidian Git: Push"**
+
+**Auto-Sync (Optional):**
+- Settings → Obsidian Git
+- Set "Vault backup interval" (e.g., 10 minutes)
+- Enable "Auto push" to keep your repo synced automatically
+
+### Step 4: Pull Template Updates
+
+**Recommended: Via Terminal (Safest)**
+```bash
+# 1. Commit your changes first via plugin
+# 2. Fetch updates
+git fetch upstream
+
+# 3. Review changes (optional)
+git log upstream/main --oneline
+
+# 4. Merge updates
+git merge upstream/main
+
+# 5. Resolve conflicts if any, then push via plugin
+```
+
+**Via Plugin (Requires Setup):**
+1. Set tracking: `git branch --set-upstream-to=upstream/main main`
+2. Run **"Obsidian Git: Pull"**
+3. Resolve conflicts if they pop up
+4. Reset tracking: `git branch --set-upstream-to=origin/main main`
+5. Push via plugin
+
+**Note:** The plugin works best for single-remote workflows. For template updates, terminal is more reliable 🎯
 ## Some Requirements ⚙️
 
 ### Configuring Incremental ID
