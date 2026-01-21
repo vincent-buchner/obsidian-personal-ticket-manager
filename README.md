@@ -26,6 +26,44 @@ It's your life gng, use it however you want!
 
 - [[ticket_template]] 🎟️ - This is the template that the ticket items are implementing. When you make a new ticket through the Overview file, it will create a note following this template in the `quest log`.
 
+## Installation 📥
+
+### Step 1: Create Your Project Directory
+
+Run your OS version of creating a new directory. For me that would be:
+
+```bash
+mkdir example-project
+```
+
+### Step 2: Navigate Into The Directory
+
+```bash
+cd example-project
+```
+
+### Step 3: Clone The Repo
+
+```bash
+git clone https://github.com/vincent-buchner/obsidian-personal-ticket-manager.git .
+```
+
+**Don't forget the period at the end** - that puts the project content in the current folder!
+
+### Step 4: Open Up Obsidian
+
+Depending on where you are, it may be different:
+
+- **If you are in one of your vaults**: Go to the lower left corner and click on your vault name with the two arrows facing up and down, then click **Manage Vaults**
+- **If you're not in a vault already**: You should already see the **Open folder as vault** option
+
+Click **Open folder as vault** and navigate to your `example-project` directory.
+
+### Step 5: Trust The Plugins
+
+Obsidian will ask you if you trust the plugins and author from this clone. Please feel free to review the **Plugins Used** section for more context. I tried to use some of the better known packages, no sneaky sh*t.
+
+That's it! You're good to go 🎉
 ## Some Requirements ⚙️
 
 ### Configuring Incremental ID
