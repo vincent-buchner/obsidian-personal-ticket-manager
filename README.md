@@ -3,6 +3,10 @@
 ![image](_Static/banner.jpg)
 
 # Personal Ticket Manager for Obsidian 📖
+
+> [!WARNING]
+> I have only tested this template on Linux and MacOS. Windows has not been tested, for any issues please refer to the `Contributing` section.
+
 ## What's This About? 🤔
 
 This is a personal ticket manager for those who find organization in making Jira tickets for themselves, but don't want the hassle of setting up Jira Cloud or Confluence. 
@@ -64,6 +68,16 @@ Click **Open folder as vault** and navigate to your `example-project` directory.
 Obsidian will ask you if you trust the plugins and author from this clone. Please feel free to review the **Plugins Used** section for more context. I tried to use some of the better known packages, no sneaky sh*t.
 
 That's it! You're good to go 🎉
+
+## Creating a New Project 🚀
+
+### Starting Your Project Folder Structure
+
+- To create a new project, click the **Templater icon** on the left hand side (looks like \<\%)
+- You will have two options: **Create new project template** and **ticket template**
+- Click on **Create new project template** to scaffold out your new project
+
+This will set up your quest log and overview file, and you'll be ready to start tracking tickets!
 ## Some Requirements ⚙️
 
 ### Configuring Incremental ID
