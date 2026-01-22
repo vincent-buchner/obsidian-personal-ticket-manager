@@ -113,6 +113,10 @@ Want hands-off updates? Enable auto-pull in the plugin settings (Settings → Ob
 ## Setting Up Your Personal Repo 🔗
 
 I honestly had a whole section outlined here on here to set this up, but this article does it so much better: [Create a private fork of a public repository](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274)
+
+> [!WARNING]
+> When doing this, I would recommend disabling the Git plugin and then enabling again after the merge is complete. Push your changes to you private remote, then enable the Git plugin.
+
 ## Some Requirements ⚙️
 
 ### Configuring Incremental ID
