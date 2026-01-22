@@ -112,65 +112,7 @@ Want hands-off updates? Enable auto-pull in the plugin settings (Settings → Ob
 - **Warning**: This could interrupt your work if conflicts pop up, so use with caution
 ## Setting Up Your Personal Repo 🔗
 
-Want to keep your own version synced to GitHub while still pulling template updates? Here's how:
-### Step 1: Fork and Clone
-
-1. **Fork the template repo** on GitHub to your account (or create a new empty repo)
-2. In Obsidian, open Command Palette (`Ctrl/Cmd + P`)
-3. Run **"Obsidian Git: Clone an existing remote repo"**
-4. Enter your repo URL with a personal access token (PAT):
-   ```
-   https://<YOUR_PAT>@github.com/yourusername/your-repo.git
-   ```
-5. Reload Obsidian if needed
-
-### Step 2: Add Template as Upstream
-
-**Via Plugin (Easiest):**
-- Settings → Obsidian Git → **"Edit remotes"** (or Command Palette → "Obsidian Git: Edit remotes")
-- Add remote: Name it `upstream`, URL: `https://github.com/vincent-buchner/obsidian-personal-ticket-manager.git`
-
-**Via Terminal (Alternative):**
-```bash
-git remote add upstream https://github.com/vincent-buchner/obsidian-personal-ticket-manager.git
-```
-
-### Step 3: Sync Your Changes to Your Repo
-
-**Manual:**
-1. Command Palette → **"Obsidian Git: Commit all changes"** (add message like "My updates")
-2. Command Palette → **"Obsidian Git: Push"**
-
-**Auto-Sync (Optional):**
-- Settings → Obsidian Git
-- Set "Vault backup interval" (e.g., 10 minutes)
-- Enable "Auto push" to keep your repo synced automatically
-
-### Step 4: Pull Template Updates
-
-**Recommended: Via Terminal (Safest)**
-```bash
-# 1. Commit your changes first via plugin
-# 2. Fetch updates
-git fetch upstream
-
-# 3. Review changes (optional)
-git log upstream/main --oneline
-
-# 4. Merge updates
-git merge upstream/main
-
-# 5. Resolve conflicts if any, then push via plugin
-```
-
-**Via Plugin (Requires Setup):**
-1. Set tracking: `git branch --set-upstream-to=upstream/main main`
-2. Run **"Obsidian Git: Pull"**
-3. Resolve conflicts if they pop up
-4. Reset tracking: `git branch --set-upstream-to=origin/main main`
-5. Push via plugin
-
-**Note:** The plugin works best for single-remote workflows. For template updates, terminal is more reliable 🎯
+I honestly had a whole section outlined here on here to set this up, but this article does it so much better: [Create a private fork of a public repository](https://gist.github.com/0xjac/85097472043b697ab57ba1b1c7530274)
 ## Some Requirements ⚙️
 
 ### Configuring Incremental ID
