@@ -1,25 +1,25 @@
 ---
-prefix: EX
+prefix: Y26
 ---
-# Example
+# Items of 2026 - The Cake Walk
 
-## This is only an example!
+## test
 
 ***
 
 ```button
 name Create Side Quest
-type note(Example/quest log/<% await app.insertIncrementalId(tp.frontmatter.prefix) %>, tab) template
+type note(2026 Cake Walk/quest log/<% await app.insertIncrementalId(tp.frontmatter.prefix) %>  <% tp.system.prompt("What's the title?", "") %> , tab) template
 action ticket_template
 templater true
 ```
 
 ## TL;DR
-This directory is only for an example. You can delete if you'd like. That's your choice.
+Okay
 
 ### Created HeatMap
 ```dataviewjs
-const pages = dv.pages('"Example/quest log"')
+const pages = dv.pages('"2026 Cake Walk/quest log"')
 
 const calendarData = {
     entries: []
@@ -71,7 +71,7 @@ type: Pie
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages('"Example/quest log"')
+  return dv.pages('"2026 Cake Walk/quest log"')
            .groupBy(p => p.status)
            .map(p => ({status: p.key || "No Status", count: p.rows.length}))
            .array();
@@ -100,7 +100,7 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages('"Example/quest log"')
+  return dv.pages('"2026 Cake Walk/quest log"')
            .groupBy(p => p.status)
            .map(p => ({
              category: p.key || "No Status",
@@ -135,7 +135,7 @@ options:
 TABLE WITHOUT ID
   status as Status,
   length(rows) as Count
-FROM "Example/quest log"
+FROM "2026 Cake Walk/quest log"
 GROUP BY status
 ```
 
@@ -152,7 +152,7 @@ type: Pie
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages('"Example/quest log"')
+  return dv.pages('"2026 Cake Walk/quest log"')
            .groupBy(p => p.type)
            .map(p => ({type: p.key || "No Type", count: p.rows.length}))
            .array();
@@ -181,7 +181,7 @@ type: Radar
 #-----------------#
 data: |
   dataviewjs:
-  return dv.pages('"Example/quest log"')
+  return dv.pages('"2026 Cake Walk/quest log"')
            .groupBy(p => p.type)
            .map(p => ({
              category: p.key || "No Type",
@@ -216,6 +216,6 @@ options:
 TABLE WITHOUT ID
   type as Type,
   length(rows) as Count
-FROM "Example/quest log"
+FROM "2026 Cake Walk/quest log"
 GROUP BY type
 ```

@@ -6,5 +6,6 @@
   "dataview",
   "obsidian-vimrc-support",
   "buttons",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-git"
 ]
