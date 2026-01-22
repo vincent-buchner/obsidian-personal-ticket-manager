@@ -22,16 +22,6 @@
         "enabled": false,
         "numberOfZeros": 2
       }
-    },
-    {
-      "prefix": "Y26",
-      "currentIteration": 0,
-      "name": "Year 2026",
-      "separator": "-",
-      "leadingZeros": {
-        "enabled": false,
-        "numberOfZeros": 8
-      }
     }
   ]
 }
